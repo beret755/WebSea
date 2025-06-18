@@ -7,6 +7,7 @@ Lekka przeglądarka internetowa napisana w Pythonie z użyciem PyQt5 i QtWebEngi
 - Ikona w system trayu + powiadomienia
 - Lekki interfejs bez śmieci
 - W pełni otwartoźródłowa 🔓
+- Przeglądarka najlepiej działa z GNOME 46.0
 
 ## Wymagania
 - Python 3.x
