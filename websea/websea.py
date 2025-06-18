@@ -10,6 +10,15 @@ from PyQt5.QtGui import QIcon
 import sys
 import shutil
 import os
+import platform
+from PyQt5.QtWidgets import QMessageBox
+
+# Sprawdzenie systemu operacyjnego
+if platform.system() == "Windows":
+    QMessageBox.critical(None, "Nieobsługiwany system",
+                         "🚫 Ta przeglądarka działa tylko na systemach Linux.\n"
+                         "Zainstaluj Linuxa i przestań używać badziewia.")
+    sys.exit(1)
 os.environ["QTWEBENGINE_CHROMIUM_FLAGS"] = "--disable-gpu"
 os.environ["QT_QUICK_BACKEND"] = "software"
 
@@ -93,7 +102,7 @@ class BrowserTab(QWidget):
 class Browser(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("WebSea aplha 0.45")
+        self.setWindowTitle("WebSea aplha 0.50")
         self.setGeometry(100, 100, 1200, 800)
 
         icon_path = "add_your_icon_path_here.png"  # Replace with your icon path
