@@ -1,13 +1,7 @@
 # WebSea 🐚
 Lekka przeglądarka internetowa napisana w Pythonie z użyciem PyQt5 i QtWebEngine.
-To run websea you can use 
-python3 websea.py 
 
-or
 
- pyinstaller --noconfirm --windowed --hidden-import=PyQt5.sip --hidden-import=PyQt5.QtWebEngineWidgets websea.py
-
-REMEBER you nedd to be in websea folder
 
 ## Funkcje
 - Wiele kart (jak w Firefox/Chrome)
@@ -26,3 +20,8 @@ REMEBER you nedd to be in websea folder
 ## Uruchomienie
 ```bash
 python3 websea.py
+
+OR
+
+ pyinstaller --noconfirm --windowed --hidden-import=PyQt5.sip --hidden-import=PyQt5.QtWebEngineWidgets websea.py
+
